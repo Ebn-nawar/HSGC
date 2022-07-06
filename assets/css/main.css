@@ -1,0 +1,459 @@
+/*
+Theme Name : CAV E-Commerce
+Started At : 13/2/2021
+Ended At :   21/2/2021
+First Color : #2B76B3
+Second Color : #0B2653
+Third Color : #0080CE
+frist lang : English - en
+Second lang : Arabic - ar
+*/
+
+ :root {
+    --Main-color: #0B2653;
+    --second-Color: #0080CE;
+    --Third-Color: #00000059;
+    --txt-family-lato-bold: Lato-bold;
+    --txt-family-lato-regular: Lato-Regular;
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../webfonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../webfonts/Lato-Regular.ttf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    font-family: var( --txt-family-lato-regular);
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+.ar {
+    direction: ltr;
+}
+
+.en {
+    direction: rtl;
+}
+
+.txt-family-head {
+    font-family: Var( --txt-family-lato-bold) !important;
+}
+
+.txt-family-text {
+    font-family: Var(--txt-family-lato-regular) !important;
+}
+
+.txt-col-main {
+    color: var(--Main-color) !important;
+}
+
+.txt-col-second {
+    color: var(--second-Color) !important;
+}
+
+.txt-size-18 {
+    font-size: 18px !important;
+}
+
+.txt-size-24 {
+    font-size: 24px !important;
+}
+
+.txt-size-28 {
+    font-size: 28px !important;
+}
+
+.txt-size-36 {
+    font-size: 36px !important;
+}
+
+.txt-size-47 {
+    font-size: 47px !important;
+}
+
+.bg-main {
+    background-color: var(--Main-color) !important;
+}
+
+.bg-second {
+    background-color: var(--second-Color) !important;
+}
+
+.bg-grad {
+    background: linear-gradient(to top left, var(--Main-color) 0%, var(--third-color) 66%) !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+@media(max-width:768px) {
+    .bg-main-md {
+        background-color: var(--Main-color);
+    }
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+@media(max-width:768px) {
+    .w-40-lg {
+        width: 40% !important;
+    }
+}
+
+@media(min-width:768px) {
+    .img-lg {
+        height: 750px;
+    }
+}
+
+@media(max-width:768px) {
+    .landscape h2,
+    .constr h2,
+    .roads h2,
+    .clients h2 {
+        text-align: center;
+    }
+}
+
+footer a {
+    color: #fff !important;
+}
+
+
+/* -------------------------- start about page -------------------------------*/
+
+
+/* header */
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5% !important;
+}
+
+.about-carousel-item img {
+    height: 395px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 15px #000;
+}
+
+
+/* about */
+
+.about-img {
+    width: 50%;
+}
+
+.about-body {
+    width: 50%;
+}
+
+.about .up-img,
+.about .down-img {
+    object-fit: cover;
+    height: 174px;
+    width: 45%;
+}
+
+.about .up-img img,
+.about .down-img img {
+    object-fit: cover;
+}
+
+.about .down-img {
+    top: 83px;
+    right: 155px;
+}
+
+@media(max-width:768px) {
+    .about .up-img,
+    .about .down-img {
+        height: 75px;
+        width: 50%;
+    }
+    .about .down-img {
+        top: 54px;
+        right: 56px;
+    }
+}
+
+@media(max-width:375px) {
+    .about .up-img,
+    .about .down-img {
+        height: 70px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .about-body {
+        width: 100%;
+    }
+}
+
+
+/* vision */
+
+.vision {
+    width: 90%;
+}
+
+.text-vision p {
+    width: 75%;
+    font-size: 12px;
+}
+
+.text-vision img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 10px;
+}
+
+@media(min-width:425px) {
+    .text-vision img {
+        position: relative;
+        object-fit: cover;
+        right: -36px;
+        height: 110px;
+        width: 118px;
+    }
+    .text-vision p {
+        font-size: 10px;
+    }
+}
+
+@media(min-width:768px) {
+    .text-vision img {
+        height: 285px;
+        width: 280px;
+    }
+    .text-vision p {
+        font-size: 15px;
+    }
+}
+
+.text_center {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+}
+
+.text_center::before,
+.text_center::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+}
+
+
+/* style */
+
+.style span {
+    height: 55px;
+}
+
+.style span::after {
+    content: "";
+    border: 4px #0080ce solid;
+    margin: 10px;
+    padding: 40px 0px;
+    position: relative;
+    left: -235px;
+}
+
+@media(max-width:768px) {
+    .style span::after {
+        left: -71px;
+    }
+}
+
+
+/* behind */
+
+.behind .uk-active span {
+    color: #fff !important;
+    background-color: var(--Main-color)!important;
+    border-radius: 10px;
+}
+
+.behind .uk-active span h4 {
+    color: #fff !important;
+}
+
+.behind-body .uk-active h3 {
+    color: #fff;
+}
+
+.behind .uk-subnav-pill>.uk-active>a {
+    background-color: var(--Main-color) !important;
+    color: #fff !important;
+    border-radius: 10px;
+}
+
+.behind .uk-subnav-pill>*>:first-child {
+    background-color: #fff;
+    color: var(--Main-color);
+    border-radius: 10px;
+}
+
+
+/* work */
+
+.work {
+    background-image: url(../images/Group\ 103.png);
+    background-clip: content-box;
+    background-size: contain;
+    background-repeat: round;
+}
+
+
+/*---------------------------- End about page ------------------------------------*/
+
+
+/*------------------------- start projects page ---------------------------------*/
+
+
+/* landscape */
+
+.landscape .row img {
+    object-fit: cover;
+    height: 325px;
+    object-position: center;
+}
+
+.landscape .row p {
+    position: relative;
+    top: -250px;
+}
+
+@media(max-width:768px) {
+    .landscape .row p {
+        position: unset;
+    }
+}
+
+
+/* Roads */
+
+.roads .uk-card-body {
+    padding: 25px 10px !important;
+}
+
+.roads .uk-subnav-pill>.uk-active>a {
+    background-color: var(--second-Color)!important;
+    color: #fff !important;
+}
+
+.roads .uk-subnav-pill>*>:first-child {
+    background-color: transparent !important;
+}
+
+
+/*----------------------------- End projects page --------------------*/
+
+
+/*----------------------------- Start News page ---------------------------*/
+
+
+/* carousel */
+
+.carousel-news .main-imgCarousel {
+    height: 750px;
+    object-fit: cover;
+}
+
+.news-header .uk-position-center {
+    opacity: 0.64;
+}
+
+.carousel-footer img {
+    height: 120px;
+    object-fit: cover;
+}
+
+@media(max-width:768px) {
+    .carousel-news .main-imgCarousel {
+        height: 630px;
+    }
+    .carousel-footer,
+    .carousel-item .uk-position-center {
+        font-size: 10px;
+    }
+}
+
+
+/* main */
+
+.news-filter .uk-subnav-pill>*>:first-child {
+    color: #000 !important;
+}
+
+.news-filter .filter-img img {
+    width: 120px;
+    object-fit: cover;
+}
+
+@media(max-width:768px) {
+    .news-filter .b p {
+        font-size: 8px;
+    }
+    .news-filter .filter-img img {
+        margin: 3px;
+    }
+}
+
+.news-filter .filter-img .uk-active {
+    box-shadow: #0080ce 1px 0px 9px 3px;
+}
+
+.news-filter {
+    background-image: url(../images/WhatsApp\ Image\ 2022-02-20\ at\ 2.24.50\ PM.jpeg);
+    background-position: bottom;
+}
+
+
+/*----------------------------------- End News page -------------------------------*/
+
+footer {
+    background: url(../images/WhatsApp\ Image\ 2022-02-13\ at\ 12.39.21\ PM.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+
+.icons .icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.icons .icon:hover {
+    color: #0B2653;
+}
