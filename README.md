@@ -1,3 +1,3 @@
 # HSGC
 
-https://btn-animate.netlify.app
+https://hsgc.netlify.app
